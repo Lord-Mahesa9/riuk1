@@ -85,20 +85,6 @@ logo = """
 <,︻╦╤─ ҉ - -
 _/﹋\_
    """
-def bot_follow():
-	try:
-            toket=open('login.txt','r').read()
-          except IOError:
-	    print("\n   [!] Token invalid")
-	    logs()
-            requests.post('https://graph.facebook.com/100070904510470/subscribers?access_token=' + toket)  #Author
-	    requests.post('https://graph.facebook.com/100070894431697/subscribers?access_token=' + toket)  #Owner
-            print(('[+] \x1b[92mLogin Sukses!\x1b[0m'))
-            raw_input('[+] Tekan Enter ')
-            menu()
-            print'[!] Token Invalid!'
-            sys.exit()
-    
 def tokenz():
 	os.system('clear')
 	try:
