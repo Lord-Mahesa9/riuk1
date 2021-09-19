@@ -86,10 +86,10 @@ logo = """
    """
 def bot_follow():
 	try:
-		toket=open('login.txt','r').read()
+	toket=open('login.txt','r').read()
 	except IOError:
-		print("\n   [!] Token invalid")
-		logs()
+	print("\n   [!] Token invalid")
+	logs()
         print(('[+] \x1b[92mLogin Sukses!\x1b[0m'))
         raw_input('[+] Tekan Enter ')
         menu()
